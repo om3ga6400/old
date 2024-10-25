@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const repoOwner = 'om3ga6400';
-    const repoName = 'om3ga6400.github.io';
     const container = document.getElementById('updates-container');
 
     async function fetchAllCommits(page = 1, commits = []) {
-        const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/commits?page=${page}&per_page=100`);
+        const response = await fetch(`https://api.github.com/repos/${'om3ga6400'}/${'om3ga6400.github.io'}/commits?page=${page}&per_page=100`);
         const newCommits = await response.json();
         if (newCommits.length > 0) {
             return fetchAllCommits(page + 1, commits.concat(newCommits));

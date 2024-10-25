@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const username = 'om3ga6400';
     const container = document.getElementById('repo-container');
 
-    fetch(`https://api.github.com/users/${username}/repos`)
+    fetch(`https://api.github.com/users/${'om3ga6400'}/repos`)
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data) && data.length > 0) {
