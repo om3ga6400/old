@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const languageColor = {
                         'JavaScript': '#f1e05a',
                         'HTML': '#e34c26',
-                        'CSS': '#ff69b4'
+                        'CSS': '#ff69b4',
+                        'Java': '#b07219' // Dark brownish orange for Java
                     }[repo.language] || '#c9d1d9';
 
                     const repoCard = document.createElement('div');
