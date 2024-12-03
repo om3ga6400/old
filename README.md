@@ -11,11 +11,6 @@
 ## Overview
 The repository for my very cool website, made with HTML, CSS, and JavaScript.
 
-## Features
-- **Responsive Design**: Works on all devices, from desktop to mobile.
-- **Interactive Elements**: Includes interactive elements built with JavaScript.
-- **Modern Styling**: Uses modern CSS techniques for styling.
-
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
