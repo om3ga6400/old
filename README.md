@@ -2,14 +2,13 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Features](#features)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-The repository for my very cool website, made with HTML, CSS, and JavaScript.
+The is the repository for my very cool website, made with HTML, CSS, and JavaScript.
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
