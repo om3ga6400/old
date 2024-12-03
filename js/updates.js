@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const changedFiles = commitDetails.files ? commitDetails.files.length : 0;
                 const deploymentStatus = commitDetails.commit.message.toLowerCase().includes('deploy failed') ? 'failed' : 'passed';
 
+                const truncatedTitle = commitTitle.length > 50 ? commitTitle.substring(0, 47) + '...' : commitTitle;
+
                 commitElement.href = commit.html_url;
                 commitElement.target = '_blank';
                 commitElement.className = 'commit-entry';
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${deploymentStatus === 'passed' ? 'Deployment Passed' : 'Deployment Failed'}
                         </p>
                         <div class="commit-details">
-                            <h3>${commitTitle}</h3>
+                            <h3>${truncatedTitle}</h3>
                             <p class="commit-description">${commitDescription}</p>
                             <p class="commit-date">${commitDate}</p>
                         </div>
