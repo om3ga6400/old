@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const username = 'om3ga6400';
     const container = document.getElementById('repo-container');
 
     fetch(`https://api.github.com/users/${'om3ga6400'}/repos`)
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'JavaScript': '#f1e05a',
                         'HTML': '#e34c26',
                         'CSS': '#ff69b4',
-                        'Java': '#b07219' // Dark brownish orange for Java
+                        'Java': '#b07219'
                     }[repo.language] || '#c9d1d9';
 
                     const repoCard = document.createElement('div');
