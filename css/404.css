@@ -1,0 +1,42 @@
+body {
+  background-color: #1e1e2e; /* Mocha base */
+  font-family: Arial, sans-serif;
+  color: #cdd6f4; /* Mocha text */
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 12.5rem;
+  margin: 0;
+  color: #f5e0dc; /* Mocha rosewater */
+}
+
+p {
+  font-size: 1.5rem;
+  color: #cdd6f4; /* Mocha text */
+}
+
+a {
+  color: #89b4fa; /* Mocha blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
