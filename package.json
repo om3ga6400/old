@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "bunx --bun next dev --turbopack",
+    "build": "bunx --bun next build",
+    "start": "bunx --bun next start",
+    "lint": "bunx --bun next lint"
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.8.0",
+    "@tsparticles/react": "^3.0.0",
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "tsparticles": "^3.8.0"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -23,5 +26,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "@eslint/eslintrc": "^3"
-  }
+  },
+  "trustedDependencies": [
+    "@tsparticles/engine"
+  ]
 }
